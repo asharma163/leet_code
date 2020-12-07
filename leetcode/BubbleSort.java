@@ -16,8 +16,8 @@ public class BubbleSort {
                 }
             }
         }
-        for(int i = 0; i < length; ++i) {
-            System.out.println(accept[i]);
+        for (int j : accept) {
+            System.out.println(j);
         }
 
     }
