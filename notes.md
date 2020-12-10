@@ -1,3 +1,5 @@
+**** All the solutions in this repo areleetcode accepted except for 1  I guess.....
+
 **_Pre-order traversal_** -> visit root node, traverse left-subtree then right sub-tree.
 
 **_In-order traversal_** -> left sub-tree first, then root, them right sub-tree.
