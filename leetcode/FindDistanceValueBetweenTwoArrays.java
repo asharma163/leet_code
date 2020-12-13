@@ -11,10 +11,10 @@ public class FindDistanceValueBetweenTwoArrays {
         boolean flag = false;
         int counter = 0;
 
-        for (int i = 0; i < arr1.length; i++) {
+        for (int k : arr1) {
             List<Boolean> list = new ArrayList<>();
-            for (int j = 0; j < arr2.length; j++) {
-                if(Math.abs(arr1[i] - arr2[j]) <= d) {
+            for (int i : arr2) {
+                if (Math.abs(k - i) <= d) {
                     list.add(true);
                 }
             }

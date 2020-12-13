@@ -11,9 +11,9 @@ public class IsSubsequence {
         boolean flag = false;
         ArrayList<Integer> list = new ArrayList<>();
         if (s.length() > 0) {
-            for (int i = 0; i < s_arr.length; i++) {
+            for (char c : s_arr) {
                 for (int j = 0; j < t_arr.length; j++) {
-                    if (s_arr[i] == t_arr[j]) {
+                    if (c == t_arr[j]) {
                         list.add(j);
                         flag = true;
                         break;

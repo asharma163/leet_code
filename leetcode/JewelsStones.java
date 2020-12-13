@@ -14,9 +14,9 @@ public class JewelsStones {
         char[] stones = new char[S.length()];
         jewels = J.toCharArray();
         stones = S.toCharArray();
-        for(int i = 0; i < jewels.length; i++) {
-            for(int j = 0; j < stones.length; j++) {
-                if(jewels[i] == stones[j]) {
+        for (char jewel : jewels) {
+            for (char stone : stones) {
+                if (jewel == stone) {
                     counter++;
                 }
             }

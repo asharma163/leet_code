@@ -9,8 +9,8 @@ public class HowManyNumbersAreSmallerThanCurrentNumber {
         int[] new_arr = new int[nums.length];
         ArrayList<Integer> list = new ArrayList<>();
         for (int i = 0; i < nums.length; i++) {
-            for (int j = 0; j < nums.length; j++) {
-                if (nums[i] > nums[j]) {
+            for (int num : nums) {
+                if (nums[i] > num) {
                     count++;
                 }
             }

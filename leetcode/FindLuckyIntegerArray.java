@@ -10,8 +10,8 @@ public class FindLuckyIntegerArray {
         int result = -1;
         Map<Integer,Integer> map = new HashMap<>();
         Stack<Integer> stack = new Stack<>();
-        for (int i = 0; i < arr.length; i++) {
-            map.put(arr[i],map.getOrDefault(arr[i],0) + 1);
+        for (int j : arr) {
+            map.put(j, map.getOrDefault(j, 0) + 1);
         }
 
         for (Map.Entry<Integer,Integer> entry : map.entrySet()) {

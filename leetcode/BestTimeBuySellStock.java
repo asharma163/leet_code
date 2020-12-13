@@ -5,11 +5,11 @@ public class BestTimeBuySellStock {
         int[] prices = {7,1,5,3,6,4};
         int max = 0;
         int min = Integer.MAX_VALUE;
-        for (int i = 0; i < prices.length; i++) {
-            if (prices[i] < min) {
-                min = prices[i];
+        for (int price : prices) {
+            if (price < min) {
+                min = price;
             } else {
-                max = Math.max(max,prices[i] - min);
+                max = Math.max(max, price - min);
             }
         }
         System.out.println(max);

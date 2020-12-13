@@ -7,21 +7,21 @@ public class BaseballGame {
         String[] ops = {"5","2","C","D","+"};
         int running_total = 0;
         Stack<Integer> stack = new Stack<>();
-        for (int i = 0; i < ops.length; i++) {
-            if (ops[i].equals("C")) {
+        for (String op : ops) {
+            if (op.equals("C")) {
                 stack.pop();
-            } else if (ops[i].equals("D")) {
+            } else if (op.equals("D")) {
                 int interim = stack.peek();
                 interim *= 2;
                 stack.push(interim);
-            } else if (ops[i].equals("+")) {
+            } else if (op.equals("+")) {
                 int first = stack.pop();
                 int second = stack.peek();
                 int sum = first + second;
                 stack.push(first);
                 stack.push(sum);
             } else {
-                stack.push(Integer.parseInt(ops[i]));
+                stack.push(Integer.parseInt(op));
             }
         }
         for (Integer x : stack) {
