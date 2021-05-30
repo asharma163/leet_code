@@ -3,11 +3,10 @@ import java.util.Arrays;
 public class FlippingImage {
     public static void main(String[] args) {
         int[][] image = {{1,1,0},{1,0,1},{0,0,0}};
-        int[][] ret_arr = new int[image.length][image[0].length];
         for (int i = 0; i < image.length; i++) {
-            ret_arr[i] = manipulate(image[i]);
+            image[i] = manipulate(image[i]);
         }
-        System.out.println(Arrays.deepToString(ret_arr));
+        System.out.println(Arrays.deepToString(image));
     }
 
     public static int[] manipulate(int[] array) {
