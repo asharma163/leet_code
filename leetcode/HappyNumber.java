@@ -10,7 +10,6 @@ public class HappyNumber {
     }
 
     public static boolean driver(int n) {
-        boolean flag = true;
         Set<Integer> set = new HashSet<>();
         while (n != 1) {
             int current = n;
