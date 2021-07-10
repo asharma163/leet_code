@@ -11,6 +11,6 @@ public class DecryptStringAlphabetIntegerMapping {
                 stringBuilder.append((char) ('0' + s.charAt(i)));
             }
         }
-        System.out.println(stringBuilder.reverse().toString());
+        System.out.println(stringBuilder.reverse());
     }
 }
